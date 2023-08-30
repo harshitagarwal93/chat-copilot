@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CopilotChat.WebApi.Models.Response;
+namespace ChatCopilot.WebApi.Models.Response;
 
 public class AskResult
 {

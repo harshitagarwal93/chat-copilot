@@ -6,15 +6,15 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Auth;
-using CopilotChat.WebApi.Hubs;
-using CopilotChat.WebApi.Models.Request;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Models.Storage;
-using CopilotChat.WebApi.Options;
-using CopilotChat.WebApi.Services;
-using CopilotChat.WebApi.Skills;
-using CopilotChat.WebApi.Storage;
+using ChatCopilot.WebApi.Auth;
+using ChatCopilot.WebApi.Hubs;
+using ChatCopilot.WebApi.Models.Request;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Models.Storage;
+using ChatCopilot.WebApi.Options;
+using ChatCopilot.WebApi.Services;
+using ChatCopilot.WebApi.Skills;
+using ChatCopilot.WebApi.Storage;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
@@ -26,7 +26,7 @@ using Microsoft.SemanticKernel.Text;
 using UglyToad.PdfPig;
 using UglyToad.PdfPig.DocumentLayoutAnalysis.TextExtractor;
 
-namespace CopilotChat.WebApi.Controllers;
+namespace ChatCopilot.WebApi.Controllers;
 
 /// <summary>
 /// Controller for importing documents.

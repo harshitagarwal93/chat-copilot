@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace CopilotChat.WebApi.Options;
+namespace ChatCopilot.WebApi.Options;
 
 /// <summary>
 /// Configuration settings for connecting to Azure CosmosDB.

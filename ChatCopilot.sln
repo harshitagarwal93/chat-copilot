@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33706.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CopilotChatWebApi", "webapi\CopilotChatWebApi.csproj", "{5252E68F-B653-44CE-9A32-360A75C54E0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatCopilotWebApi", "webapi\ChatCopilotWebApi.csproj", "{5252E68F-B653-44CE-9A32-360A75C54E0E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatCopilotIntegrationTests", "integration-tests\ChatCopilotIntegrationTests.csproj", "{0CD2CD95-536B-455F-B74A-772A455FA607}"
 EndProject

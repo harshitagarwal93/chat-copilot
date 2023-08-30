@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace CopilotChat.WebApi.Skills.ChatSkills;
+namespace ChatCopilot.WebApi.Skills.ChatSkills;
 
 /// <summary>
 /// A collection of semantic chat memory.

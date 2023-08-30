@@ -5,12 +5,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Azure;
-using CopilotChat.WebApi.Auth;
-using CopilotChat.WebApi.Models.Storage;
-using CopilotChat.WebApi.Options;
-using CopilotChat.WebApi.Services;
-using CopilotChat.WebApi.Storage;
-using CopilotChat.WebApi.Utilities;
+using ChatCopilot.WebApi.Auth;
+using ChatCopilot.WebApi.Models.Storage;
+using ChatCopilot.WebApi.Options;
+using ChatCopilot.WebApi.Services;
+using ChatCopilot.WebApi.Storage;
+using ChatCopilot.WebApi.Utilities;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -20,13 +20,13 @@ using Microsoft.Extensions.Options;
 using Microsoft.Identity.Web;
 using Tesseract;
 
-namespace CopilotChat.WebApi.Extensions;
+namespace ChatCopilot.WebApi.Extensions;
 
 /// <summary>
 /// Extension methods for <see cref="IServiceCollection"/>.
-/// Add options and services for Copilot Chat.
+/// Add options and services for Chat Copilot.
 /// </summary>
-public static class CopilotChatServiceExtensions
+public static class ChatCopilotServiceExtensions
 {
     /// <summary>
     /// Parse configuration into options.
@@ -231,7 +231,7 @@ public static class CopilotChatServiceExtensions
     /// <summary>
     /// Add authorization services
     /// </summary>
-    public static IServiceCollection AddCopilotChatAuthorization(this IServiceCollection services)
+    public static IServiceCollection AddChatCopilotAuthorization(this IServiceCollection services)
     {
         return services.AddScoped<IAuthorizationHandler, ChatParticipantAuthorizationHandler>()
             .AddAuthorizationCore(options =>
@@ -250,7 +250,7 @@ public static class CopilotChatServiceExtensions
     /// <summary>
     /// Add authentication services
     /// </summary>
-    public static IServiceCollection AddCopilotChatAuthentication(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddChatCopilotAuthentication(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddScoped<IAuthInfo, AuthInfo>();
         var config = services.BuildServiceProvider().GetRequiredService<IOptions<ChatAuthenticationOptions>>().Value;

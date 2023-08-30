@@ -5,16 +5,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Models.Storage;
-using CopilotChat.WebApi.Options;
-using CopilotChat.WebApi.Storage;
+using ChatCopilot.WebApi.Models.Storage;
+using ChatCopilot.WebApi.Options;
+using ChatCopilot.WebApi.Storage;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.SemanticKernel.Diagnostics;
 using Microsoft.SemanticKernel.Memory;
 using Microsoft.SemanticKernel.SkillDefinition;
 
-namespace CopilotChat.WebApi.Skills.ChatSkills;
+namespace ChatCopilot.WebApi.Skills.ChatSkills;
 
 /// <summary>
 /// This skill provides the functions to query the semantic chat memory.

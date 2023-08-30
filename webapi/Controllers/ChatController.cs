@@ -9,14 +9,14 @@ using System.Reflection;
 using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Auth;
-using CopilotChat.WebApi.Hubs;
-using CopilotChat.WebApi.Models.Request;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Services;
-using CopilotChat.WebApi.Skills.ChatSkills;
-using CopilotChat.WebApi.Storage;
-using CopilotChat.WebApi.Utilities;
+using ChatCopilot.WebApi.Auth;
+using ChatCopilot.WebApi.Hubs;
+using ChatCopilot.WebApi.Models.Request;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Services;
+using ChatCopilot.WebApi.Skills.ChatSkills;
+using ChatCopilot.WebApi.Storage;
+using ChatCopilot.WebApi.Utilities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
@@ -32,7 +32,7 @@ using Microsoft.SemanticKernel.Skills.MsGraph.Connectors.Client;
 using Microsoft.SemanticKernel.Skills.OpenAPI.Authentication;
 using Microsoft.SemanticKernel.Skills.OpenAPI.Extensions;
 
-namespace CopilotChat.WebApi.Controllers;
+namespace ChatCopilot.WebApi.Controllers;
 
 /// <summary>
 /// Controller responsible for handling chat messages and responses.
@@ -75,7 +75,7 @@ public class ChatController : ControllerBase, IDisposable
     public async Task<IActionResult> ChatAsync(
         [FromServices] IKernel kernel,
         [FromServices] IHubContext<MessageRelayHub> messageRelayHubContext,
-        [FromServices] CopilotChatPlanner planner,
+        [FromServices] ChatCopilotPlanner planner,
         [FromServices] AskConverter askConverter,
         [FromServices] ChatSessionRepository chatSessionRepository,
         [FromServices] ChatParticipantRepository chatParticipantRepository,
@@ -193,7 +193,7 @@ public class ChatController : ControllerBase, IDisposable
     /// <summary>
     /// Register skills with the planner's kernel.
     /// </summary>
-    private async Task RegisterPlannerSkillsAsync(CopilotChatPlanner planner, Dictionary<string, string> openApiSkillsAuthHeaders, ContextVariables variables)
+    private async Task RegisterPlannerSkillsAsync(ChatCopilotPlanner planner, Dictionary<string, string> openApiSkillsAuthHeaders, ContextVariables variables)
     {
         // Register authenticated skills with the planner's kernel only if the request includes an auth header for the skill.
 

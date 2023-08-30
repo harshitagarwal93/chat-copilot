@@ -4,14 +4,14 @@ using System;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Options;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Options;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace CopilotChat.WebApi.Controllers;
+namespace ChatCopilot.WebApi.Controllers;
 
 [ApiController]
 public class SpeechTokenController : ControllerBase

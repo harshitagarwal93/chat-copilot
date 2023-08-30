@@ -3,9 +3,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using CopilotChat.WebApi.Options;
+using ChatCopilot.WebApi.Options;
 
-namespace CopilotChat.WebApi.Models.Request;
+namespace ChatCopilot.WebApi.Models.Request;
 
 public class Ask
 {

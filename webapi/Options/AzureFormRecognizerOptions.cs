@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace CopilotChat.WebApi.Options;
+namespace ChatCopilot.WebApi.Options;
 
 /// <summary>
 /// Configuration options for Azure Form Recognizer OCR support.

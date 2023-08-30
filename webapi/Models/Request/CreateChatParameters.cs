@@ -1,7 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 using System.Text.Json.Serialization;
 
-namespace CopilotChat.WebApi.Models.Request;
+namespace ChatCopilot.WebApi.Models.Request;
 
 /// <summary>
 /// Parameters for creating a new chat session.

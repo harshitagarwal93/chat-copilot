@@ -2,7 +2,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace CopilotChat.WebApi.Options;
+namespace ChatCopilot.WebApi.Options;
 
 /// <summary>
 /// Configuration options for the bot file schema that is supported by this application.

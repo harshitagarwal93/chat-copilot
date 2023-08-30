@@ -4,12 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Options;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Options;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace CopilotChat.WebApi.Services;
+namespace ChatCopilot.WebApi.Services;
 
 /// <summary>
 /// Defines a service that performs content safety analysis on images.

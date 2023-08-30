@@ -2,10 +2,10 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace CopilotChat.WebApi.Options;
+namespace ChatCopilot.WebApi.Options;
 
 /// <summary>
-/// Configuration options for the CopilotChat service.
+/// Configuration options for the ChatCopilot service.
 /// </summary>
 public class ServiceOptions
 {

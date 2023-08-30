@@ -2,7 +2,7 @@
 
 using System.Text.Json.Serialization;
 
-namespace CopilotChat.WebApi.Models.Response;
+namespace ChatCopilot.WebApi.Models.Response;
 
 /// <summary>
 /// Information about semantic dependencies of the prompt.

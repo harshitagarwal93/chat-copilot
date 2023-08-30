@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using CopilotChat.WebApi.Models.Request;
+using ChatCopilot.WebApi.Models.Request;
 
-namespace CopilotChat.WebApi.Models.Response;
+namespace ChatCopilot.WebApi.Models.Response;
 
 /// <summary>
 /// Value of `Content` for a `ChatMessage` of type `ChatMessageType.Document`.

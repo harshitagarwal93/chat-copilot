@@ -5,8 +5,8 @@ using System.Globalization;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Extensions;
-using CopilotChat.WebApi.Options;
+using ChatCopilot.WebApi.Extensions;
+using ChatCopilot.WebApi.Options;
 using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.AI.TextCompletion;
@@ -14,7 +14,7 @@ using Microsoft.SemanticKernel.Diagnostics;
 using Microsoft.SemanticKernel.Memory;
 using Microsoft.SemanticKernel.Orchestration;
 
-namespace CopilotChat.WebApi.Skills.ChatSkills;
+namespace ChatCopilot.WebApi.Skills.ChatSkills;
 
 /// <summary>
 /// Helper class to extract and create semantic memory from chat history.

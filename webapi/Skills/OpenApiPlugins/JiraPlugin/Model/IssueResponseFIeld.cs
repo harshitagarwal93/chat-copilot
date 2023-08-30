@@ -2,7 +2,7 @@
 
 using System.Text.Json.Serialization;
 
-namespace CopilotChat.WebApi.Skills.OpenApiPlugins.JiraPlugin.Model;
+namespace ChatCopilot.WebApi.Skills.OpenApiPlugins.JiraPlugin.Model;
 
 /// <summary>
 /// Represents the fields that make up an IssueResponse.

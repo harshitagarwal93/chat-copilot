@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace CopilotChat.WebApi.Skills.OpenApiPlugins.JiraPlugin.Model;
+namespace ChatCopilot.WebApi.Skills.OpenApiPlugins.JiraPlugin.Model;
 
 /// <summary>
 /// Represents a the list of comments that make up a CommentResponse.

@@ -62,14 +62,14 @@ You can start the WebApi service using the command-line, Visual Studio Code, or 
 
 ## Visual Studio Code
 
-1. build (CopilotChatWebApi)
-2. run (CopilotChatWebApi)
-3. [optional] watch (CopilotChatWebApi)
+1. build (ChatCopilotWebApi)
+2. run (ChatCopilotWebApi)
+3. [optional] watch (ChatCopilotWebApi)
 
 ## Visual Studio (2022 or newer)
 
-1. Open the solution file in Visual Studio 2022 or newer (`CopilotChat.sln`).
-2. In Solution Explorer, right-click on `CopilotChatWebApi` and select `Set as Startup Project`.
+1. Open the solution file in Visual Studio 2022 or newer (`ChatCopilot.sln`).
+2. In Solution Explorer, right-click on `ChatCopilotWebApi` and select `Set as Startup Project`.
 3. Start debugging by pressing `F5` or selecting the menu item `Debug`->`Start Debugging`.
 
 # Enabling Sequential Planner
@@ -81,7 +81,7 @@ To enable sequential planner,
 1. In [./webapi/appsettings.json](appsettings.json), set `"Type": "Sequential"` under the `Planner` section.
 1. Then, set your preferred Planner model (`gpt-4` or `gpt-3.5-turbo`) under the `AIService` configuration section.
    1. If using `gpt-4`, no other changes are required.
-   1. If using `gpt-3.5-turbo`: change [CopilotChatPlanner.cs](Skills/ChatSkills/CopilotChatPlanner.cs) to initialize SequentialPlanner with a RelevancyThreshold\*.
+   1. If using `gpt-3.5-turbo`: change [ChatCopilotPlanner.cs](Skills/ChatSkills/ChatCopilotPlanner.cs) to initialize SequentialPlanner with a RelevancyThreshold\*.
       - Add `using` statement to top of file:
         ```
         using Microsoft.SemanticKernel.Planning.Sequential;
@@ -119,10 +119,10 @@ Before you get started, make sure you have the following additional requirements
 
    ```bash
    mkdir ./data/qdrant
-   docker run --name copilotchat -p 6333:6333 -v "$(pwd)/data/qdrant:/qdrant/storage" qdrant/qdrant
+   docker run --name chatcopilot -p 6333:6333 -v "$(pwd)/data/qdrant:/qdrant/storage" qdrant/qdrant
    ```
 
-   > To stop the container, in another terminal window run `docker container stop copilotchat; docker container rm copilotchat;`.
+   > To stop the container, in another terminal window run `docker container stop chatcopilot; docker container rm chatcopilot;`.
 
 # (Optional) Enabling the Azure Cognitive Search Memory Store
 
@@ -131,7 +131,7 @@ The service uses its [vector search](https://learn.microsoft.com/en-us/azure/sea
 
 # (Optional) Enable Application Insights telemetry
 
-Enabling telemetry on CopilotChatApi allows you to capture data about requests to and from the API, allowing you to monitor the deployment and monitor how the application is being used.
+Enabling telemetry on ChatCopilotApi allows you to capture data about requests to and from the API, allowing you to monitor the deployment and monitor how the application is being used.
 
 To use Application Insights, first create an instance in your Azure subscription that you can use for this purpose.
 

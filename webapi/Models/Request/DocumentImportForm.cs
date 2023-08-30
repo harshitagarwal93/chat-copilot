@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 
-namespace CopilotChat.WebApi.Models.Request;
+namespace ChatCopilot.WebApi.Models.Request;
 
 /// <summary>
 /// Form for importing a document from a POST Http request.

@@ -9,7 +9,7 @@ using Microsoft.SemanticKernel.Connectors.AI.OpenAI.AzureSdk;
 using Microsoft.SemanticKernel.Connectors.AI.OpenAI.Tokenizers;
 using Microsoft.SemanticKernel.Orchestration;
 
-namespace CopilotChat.WebApi.Skills;
+namespace ChatCopilot.WebApi.Skills;
 
 /// <summary>
 /// Utility methods for token management.

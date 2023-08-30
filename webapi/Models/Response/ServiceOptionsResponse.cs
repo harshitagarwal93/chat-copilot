@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json.Serialization;
 
-namespace CopilotChat.WebApi.Models.Response;
+namespace ChatCopilot.WebApi.Models.Response;
 
 public class ServiceOptionsResponse
 {

@@ -2,9 +2,9 @@
 
 using System;
 using System.Text.Json.Serialization;
-using CopilotChat.WebApi.Storage;
+using ChatCopilot.WebApi.Storage;
 
-namespace CopilotChat.WebApi.Models.Storage;
+namespace ChatCopilot.WebApi.Models.Storage;
 
 /// <summary>
 /// A chat session

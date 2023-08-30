@@ -6,8 +6,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Options;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Options;
 using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Orchestration;
@@ -15,12 +15,12 @@ using Microsoft.SemanticKernel.Planning;
 using Microsoft.SemanticKernel.Planning.Sequential;
 using Microsoft.SemanticKernel.SkillDefinition;
 
-namespace CopilotChat.WebApi.Skills.ChatSkills;
+namespace ChatCopilot.WebApi.Skills.ChatSkills;
 
 /// <summary>
 /// A lightweight wrapper around a planner to allow for curating which skills are available to it.
 /// </summary>
-public class CopilotChatPlanner
+public class ChatCopilotPlanner
 {
     /// <summary>
     /// The planner's kernel.
@@ -58,10 +58,10 @@ public class CopilotChatPlanner
     private const string StepwisePlannerSupplement = "If you need more information to fulfill this request, return with a request for additional user input.";
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="CopilotChatPlanner"/> class.
+    /// Initializes a new instance of the <see cref="ChatCopilotPlanner"/> class.
     /// </summary>
     /// <param name="plannerKernel">The planner's kernel.</param>
-    public CopilotChatPlanner(IKernel plannerKernel, PlannerOptions? plannerOptions)
+    public ChatCopilotPlanner(IKernel plannerKernel, PlannerOptions? plannerOptions)
     {
         this.Kernel = plannerKernel;
         this._plannerOptions = plannerOptions;

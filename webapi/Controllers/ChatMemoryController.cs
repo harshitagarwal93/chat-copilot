@@ -3,10 +3,10 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Auth;
-using CopilotChat.WebApi.Options;
-using CopilotChat.WebApi.Skills.ChatSkills;
-using CopilotChat.WebApi.Storage;
+using ChatCopilot.WebApi.Auth;
+using ChatCopilot.WebApi.Options;
+using ChatCopilot.WebApi.Skills.ChatSkills;
+using ChatCopilot.WebApi.Storage;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,7 +15,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.SemanticKernel.Diagnostics;
 using Microsoft.SemanticKernel.Memory;
 
-namespace CopilotChat.WebApi.Controllers;
+namespace ChatCopilot.WebApi.Controllers;
 
 /// <summary>
 /// Controller for retrieving semantic memory data of chat sessions.

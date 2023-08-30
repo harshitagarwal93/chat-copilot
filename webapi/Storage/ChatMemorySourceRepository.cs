@@ -3,9 +3,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Models.Storage;
+using ChatCopilot.WebApi.Models.Storage;
 
-namespace CopilotChat.WebApi.Storage;
+namespace ChatCopilot.WebApi.Storage;
 
 /// <summary>
 /// A repository for chat messages.

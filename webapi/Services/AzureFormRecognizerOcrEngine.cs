@@ -10,7 +10,7 @@ using Azure.AI.FormRecognizer;
 using Azure.AI.FormRecognizer.Models;
 using Microsoft.AspNetCore.Http;
 
-namespace CopilotChat.WebApi.Services;
+namespace ChatCopilot.WebApi.Services;
 
 /// <summary>
 /// Wrapper for the Azure.AI.FormRecognizer. This allows Form Recognizer to be used as the OCR engine for reading text from files with an image MIME type.

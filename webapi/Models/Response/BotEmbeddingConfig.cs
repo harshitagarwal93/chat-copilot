@@ -2,9 +2,9 @@
 
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
-using CopilotChat.WebApi.Options;
+using ChatCopilot.WebApi.Options;
 
-namespace CopilotChat.WebApi.Models.Response;
+namespace ChatCopilot.WebApi.Models.Response;
 
 /// <summary>
 /// The embedding configuration of a bot. Used in the Bot object for portability.

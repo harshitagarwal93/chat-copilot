@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
-namespace CopilotChat.WebApi.Storage;
+namespace ChatCopilot.WebApi.Storage;
 
 public interface IStorageEntity
 {

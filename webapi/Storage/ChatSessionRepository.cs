@@ -1,8 +1,8 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
-using CopilotChat.WebApi.Models.Storage;
+using ChatCopilot.WebApi.Models.Storage;
 
-namespace CopilotChat.WebApi.Storage;
+namespace ChatCopilot.WebApi.Storage;
 
 /// <summary>
 /// A repository for chat sessions.

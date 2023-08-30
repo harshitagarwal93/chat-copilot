@@ -1,9 +1,9 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
 using System.Text.Json.Serialization;
-using CopilotChat.WebApi.Services;
+using ChatCopilot.WebApi.Services;
 
-namespace CopilotChat.WebApi.Models.Response;
+namespace ChatCopilot.WebApi.Models.Response;
 
 /// <summary>
 /// Response definition to the /contentsafety/image:analyze

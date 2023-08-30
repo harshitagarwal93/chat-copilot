@@ -2,7 +2,7 @@
 
 using Microsoft.AspNetCore.Authorization;
 
-namespace CopilotChat.WebApi.Auth;
+namespace ChatCopilot.WebApi.Auth;
 
 /// <summary>
 /// Used to require the chat to be owned by the authenticated user.

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace CopilotChat.WebApi.Storage;
+namespace ChatCopilot.WebApi.Storage;
 
 /// <summary>
 /// A storage context that stores entities on disk.

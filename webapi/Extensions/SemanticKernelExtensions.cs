@@ -4,11 +4,11 @@ using System;
 using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Hubs;
-using CopilotChat.WebApi.Options;
-using CopilotChat.WebApi.Services;
-using CopilotChat.WebApi.Skills.ChatSkills;
-using CopilotChat.WebApi.Storage;
+using ChatCopilot.WebApi.Hubs;
+using ChatCopilot.WebApi.Options;
+using ChatCopilot.WebApi.Services;
+using ChatCopilot.WebApi.Skills.ChatSkills;
+using ChatCopilot.WebApi.Storage;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,9 +27,9 @@ using Microsoft.SemanticKernel.Skills.Core;
 using Microsoft.SemanticKernel.TemplateEngine;
 using Npgsql;
 using Pgvector.Npgsql;
-using static CopilotChat.WebApi.Options.MemoryStoreOptions;
+using static ChatCopilot.WebApi.Options.MemoryStoreOptions;
 
-namespace CopilotChat.WebApi.Extensions;
+namespace ChatCopilot.WebApi.Extensions;
 
 /// <summary>
 /// Extension methods for registering Semantic Kernel related services.
@@ -78,7 +78,7 @@ internal static class SemanticKernelExtensions
     public static IServiceCollection AddPlannerServices(this IServiceCollection services)
     {
         IOptions<PlannerOptions>? plannerOptions = services.BuildServiceProvider().GetService<IOptions<PlannerOptions>>();
-        services.AddScoped<CopilotChatPlanner>(sp =>
+        services.AddScoped<ChatCopilotPlanner>(sp =>
         {
             IKernel plannerKernel = Kernel.Builder
                 .WithLogger(sp.GetRequiredService<ILogger<IKernel>>())
@@ -86,7 +86,7 @@ internal static class SemanticKernelExtensions
                 // TODO: [sk Issue #2046] verify planner has AI service configured
                 .WithPlannerBackend(sp.GetRequiredService<IOptions<AIServiceOptions>>().Value)
                 .Build();
-            return new CopilotChatPlanner(plannerKernel, plannerOptions?.Value);
+            return new ChatCopilotPlanner(plannerKernel, plannerOptions?.Value);
         });
 
         // Register Planner skills (AI plugins) here.
@@ -109,7 +109,7 @@ internal static class SemanticKernelExtensions
                 promptOptions: sp.GetRequiredService<IOptions<PromptsOptions>>(),
                 documentImportOptions: sp.GetRequiredService<IOptions<DocumentMemoryOptions>>(),
                 contentSafety: sp.GetService<AzureContentSafety>(),
-                planner: sp.GetRequiredService<CopilotChatPlanner>(),
+                planner: sp.GetRequiredService<ChatCopilotPlanner>(),
                 logger: sp.GetRequiredService<ILogger<ChatSkill>>()),
             nameof(ChatSkill));
 
@@ -133,7 +133,7 @@ internal static class SemanticKernelExtensions
     /// </summary>
     private static Task RegisterSkillsAsync(IServiceProvider sp, IKernel kernel)
     {
-        // Copilot chat skills
+        // Chat copilot skills
         kernel.RegisterChatSkill(sp);
 
         // Time skill

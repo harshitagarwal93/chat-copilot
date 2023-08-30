@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
-namespace CopilotChat.WebApi.Models.Request;
+namespace ChatCopilot.WebApi.Models.Request;
 
 /// <summary>
 /// Parameters for editing chat session.

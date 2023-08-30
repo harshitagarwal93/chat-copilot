@@ -9,13 +9,13 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Extensions;
-using CopilotChat.WebApi.Hubs;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Models.Storage;
-using CopilotChat.WebApi.Options;
-using CopilotChat.WebApi.Services;
-using CopilotChat.WebApi.Storage;
+using ChatCopilot.WebApi.Extensions;
+using ChatCopilot.WebApi.Hubs;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Models.Storage;
+using ChatCopilot.WebApi.Options;
+using ChatCopilot.WebApi.Services;
+using ChatCopilot.WebApi.Storage;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -26,7 +26,7 @@ using Microsoft.SemanticKernel.Orchestration;
 using Microsoft.SemanticKernel.SkillDefinition;
 using Microsoft.SemanticKernel.TemplateEngine;
 
-namespace CopilotChat.WebApi.Skills.ChatSkills;
+namespace ChatCopilot.WebApi.Skills.ChatSkills;
 
 /// <summary>
 /// ChatSkill offers a more coherent chat experience by using memories
@@ -95,7 +95,7 @@ public class ChatSkill
         IHubContext<MessageRelayHub> messageRelayHubContext,
         IOptions<PromptsOptions> promptOptions,
         IOptions<DocumentMemoryOptions> documentImportOptions,
-        CopilotChatPlanner planner,
+        ChatCopilotPlanner planner,
         ILogger logger,
         AzureContentSafety? contentSafety = null)
     {

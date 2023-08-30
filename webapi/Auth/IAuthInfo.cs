@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
-namespace CopilotChat.WebApi.Auth;
+namespace ChatCopilot.WebApi.Auth;
 
 public interface IAuthInfo
 {

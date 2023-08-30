@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace CopilotChat.WebApi.Skills.OpenApiPlugins.GitHubPlugin.Model;
+namespace ChatCopilot.WebApi.Skills.OpenApiPlugins.GitHubPlugin.Model;
 
 /// <summary>
 /// Represents a GitHub Pull Request.

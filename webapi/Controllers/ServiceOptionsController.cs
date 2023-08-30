@@ -3,14 +3,14 @@
 using System;
 using System.Diagnostics;
 using System.Reflection;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Options;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Options;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace CopilotChat.WebApi.Controllers;
+namespace ChatCopilot.WebApi.Controllers;
 
 /// <summary>
 /// Controller responsible for returning the service options to the client.

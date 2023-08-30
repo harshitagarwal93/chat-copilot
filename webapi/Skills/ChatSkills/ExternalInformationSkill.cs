@@ -9,10 +9,10 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Options;
-using CopilotChat.WebApi.Skills.OpenApiPlugins.GitHubPlugin.Model;
-using CopilotChat.WebApi.Skills.OpenApiPlugins.JiraPlugin.Model;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Options;
+using ChatCopilot.WebApi.Skills.OpenApiPlugins.GitHubPlugin.Model;
+using ChatCopilot.WebApi.Skills.OpenApiPlugins.JiraPlugin.Model;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.SemanticKernel;
@@ -20,7 +20,7 @@ using Microsoft.SemanticKernel.Orchestration;
 using Microsoft.SemanticKernel.Planning;
 using Microsoft.SemanticKernel.SkillDefinition;
 
-namespace CopilotChat.WebApi.Skills.ChatSkills;
+namespace ChatCopilot.WebApi.Skills.ChatSkills;
 
 /// <summary>
 /// This skill provides the functions to acquire external information.
@@ -33,9 +33,9 @@ public class ExternalInformationSkill
     private readonly PromptsOptions _promptOptions;
 
     /// <summary>
-    /// CopilotChat's planner to gather additional information for the chat context.
+    /// ChatCopilot's planner to gather additional information for the chat context.
     /// </summary>
-    private readonly CopilotChatPlanner _planner;
+    private readonly ChatCopilotPlanner _planner;
 
     /// <summary>
     /// Proposed plan to return for approval.
@@ -72,7 +72,7 @@ public class ExternalInformationSkill
     /// </summary>
     public ExternalInformationSkill(
         IOptions<PromptsOptions> promptOptions,
-        CopilotChatPlanner planner)
+        ChatCopilotPlanner planner)
     {
         this._promptOptions = promptOptions.Value;
         this._planner = planner;

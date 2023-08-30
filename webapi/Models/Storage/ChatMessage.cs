@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Storage;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Storage;
 
-namespace CopilotChat.WebApi.Models.Storage;
+namespace ChatCopilot.WebApi.Models.Storage;
 
 /// <summary>
 /// Information about a single chat message.

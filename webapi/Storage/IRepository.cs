@@ -3,7 +3,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace CopilotChat.WebApi.Storage;
+namespace ChatCopilot.WebApi.Storage;
 
 /// <summary>
 /// Defines the basic CRUD operations for a repository.

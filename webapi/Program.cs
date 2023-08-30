@@ -5,9 +5,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Extensions;
-using CopilotChat.WebApi.Hubs;
-using CopilotChat.WebApi.Services;
+using ChatCopilot.WebApi.Extensions;
+using ChatCopilot.WebApi.Hubs;
+using ChatCopilot.WebApi.Services;
 using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using Microsoft.AspNetCore.Builder;
@@ -18,10 +18,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace CopilotChat.WebApi;
+namespace ChatCopilot.WebApi;
 
 /// <summary>
-/// Copilot Chat Service
+/// Chat Copilot Service
 /// </summary>
 public sealed class Program
 {
@@ -46,8 +46,8 @@ public sealed class Program
             .AddPersistentChatStore()
             .AddPersistentOcrSupport()
             .AddUtilities()
-            .AddCopilotChatAuthentication(builder.Configuration)
-            .AddCopilotChatAuthorization()
+            .AddChatCopilotAuthentication(builder.Configuration)
+            .AddChatCopilotAuthorization()
             .AddSemanticKernelServices();
 
         // Add SignalR as the real time relay service
@@ -84,7 +84,7 @@ public sealed class Program
             .RequireAuthorization();
         app.MapHealthChecks("/healthz");
 
-        // Add CopilotChat hub for real time communication
+        // Add ChatCopilot hub for real time communication
         app.MapHub<MessageRelayHub>("/messageRelayHub");
 
         // Enable Swagger for development environments.

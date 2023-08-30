@@ -9,13 +9,13 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Models.Response;
-using CopilotChat.WebApi.Options;
+using ChatCopilot.WebApi.Models.Response;
+using ChatCopilot.WebApi.Options;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.SemanticKernel.AI;
 
-namespace CopilotChat.WebApi.Services;
+namespace ChatCopilot.WebApi.Services;
 
 public record AnalysisResult(
     [property: JsonPropertyName("category")] string Category,
@@ -33,7 +33,7 @@ public record ImageAnalysisRequest(
 /// </summary>
 public sealed class AzureContentSafety : IContentSafetyService
 {
-    private const string HttpUserAgent = "Copilot Chat";
+    private const string HttpUserAgent = "Chat Copilot";
 
     private readonly Uri _endpoint;
     private readonly HttpClient _httpClient;

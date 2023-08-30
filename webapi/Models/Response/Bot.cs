@@ -1,11 +1,11 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
 using System.Collections.Generic;
-using CopilotChat.WebApi.Models.Storage;
-using CopilotChat.WebApi.Options;
+using ChatCopilot.WebApi.Models.Storage;
+using ChatCopilot.WebApi.Options;
 using Microsoft.SemanticKernel.Memory;
 
-namespace CopilotChat.WebApi.Models.Response;
+namespace ChatCopilot.WebApi.Models.Response;
 
 /// <summary>
 /// The data model of a bot for portability.

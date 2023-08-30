@@ -1,6 +1,6 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
-namespace CopilotChat.WebApi.Auth;
+namespace ChatCopilot.WebApi.Auth;
 
 /// <summary>
 /// Holds the policy names for custom authorization policies.

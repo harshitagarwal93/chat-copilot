@@ -3,7 +3,7 @@
 using System.Text.Json.Serialization;
 using Microsoft.SemanticKernel.Planning;
 
-namespace CopilotChat.WebApi.Models.Response;
+namespace ChatCopilot.WebApi.Models.Response;
 
 // Type of Plan
 public enum PlanType

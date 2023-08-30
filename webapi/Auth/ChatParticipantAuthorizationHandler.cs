@@ -1,12 +1,12 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
 using System.Threading.Tasks;
-using CopilotChat.WebApi.Storage;
+using ChatCopilot.WebApi.Storage;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace CopilotChat.WebApi.Auth;
+namespace ChatCopilot.WebApi.Auth;
 
 /// <summary>
 /// Class implementing "authorization" that validates the user has access to a chat.

@@ -120,13 +120,13 @@ You can also deploy the infrastructure directly from the Azure Portal by clickin
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://aka.ms/sk-deploy-existing-azureopenai-portal)
 
-> This will automatically deploy the most recent release of CopilotChat backend binaries ([link](https://github.com/microsoft/copilot-chat/releases)).
+> This will automatically deploy the most recent release of ChatCopilot backend binaries ([link](https://github.com/microsoft/copilot-chat/releases)).
 
 > To find the deployment name when using `Deploy to Azure`, look for a deployment in your resource group that starts with `Microsoft.Template`.
 
 # Deploy Backend (WebAPI)
 
-> **_NOTE:_** This step can be skipped if the previous Azure Resources creation step succeeded without errors. The `deployWebApiPackage = true` setting in main.bicep ensures that the latest copilot chat api is deployed.
+> **_NOTE:_** This step can be skipped if the previous Azure Resources creation step succeeded without errors. The `deployWebApiPackage = true` setting in main.bicep ensures that the latest chat copilot api is deployed.
 
 To deploy the backend, build the deployment package first and deploy it to the Azure resources created above.
 

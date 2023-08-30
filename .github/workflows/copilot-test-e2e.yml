@@ -1,4 +1,4 @@
-name: Copilot Chat Tests
+name: Chat Copilot Tests
 on:
   workflow_dispatch:
   merge_group:

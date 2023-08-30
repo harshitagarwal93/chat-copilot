@@ -1,7 +1,7 @@
-# Copilot Chat Web API
+# Chat Copilot Web API
 
 This ASP.Net web application provides a web service hosting the [Semantic Kernel](https://github.com/microsoft/semantic-kernel), enabling secure
-and modular access to its features for the Copilot Chat application without embedding kernel code and settings,
+and modular access to its features for the Chat Copilot application without embedding kernel code and settings,
 while allowing user interfaces to be developed using frontend frameworks such as React and Angular.
 
 # Configure your environment
@@ -41,7 +41,7 @@ You can start the WebApi service using the command-line, Visual Studio Code, or 
 ## Command-line
 
 1. Open a terminal
-2. Change directory to the Copilot Chat webapi project directory.
+2. Change directory to the Chat Copilot webapi project directory.
    ```
    cd webapi/
    ```
@@ -91,14 +91,14 @@ To enable sequential planner,
         return new SequentialPlanner(this.Kernel, new SequentialPlannerConfig { RelevancyThreshold = 0.75 }).CreatePlanAsync(goal);
         ```
         \* The `RelevancyThreshold` is a number from 0 to 1 that represents how similar a goal is to a function's name/description/inputs. You want to tune that value when using SequentialPlanner to help keep things scoped while not missing on on things that are relevant or including too many things that really aren't. `0.75` is an arbitrary threshold and we recommend developers play around with this number to see what best fits their scenarios.
-1. Restart the `webapi` - Copilot Chat should be now running locally with SequentialPlanner.
+2. Restart the `webapi` - Chat Copilot should be now running locally with SequentialPlanner.
 
 # (Optional) Enabling the Qdrant Memory Store
 
 By default, the service uses an in-memory volatile memory store that, when the service stops or restarts, forgets all memories.
 [Qdrant](https://github.com/qdrant/qdrant) is a persistent scalable vector search engine that can be deployed locally in a container or [at-scale in the cloud](https://github.com/Azure-Samples/qdrant-azure).
 
-To enable the Qdrant memory store, you must first deploy Qdrant locally and then configure the Copilot Chat API service to use it.
+To enable the Qdrant memory store, you must first deploy Qdrant locally and then configure the Chat Copilot API service to use it.
 
 ## 1. Configure your environment
 
@@ -126,7 +126,7 @@ Before you get started, make sure you have the following additional requirements
 
 # (Optional) Enabling the Azure Cognitive Search Memory Store
 
-Azure Cognitive Search can be used as a persistent memory store for Copilot Chat.
+Azure Cognitive Search can be used as a persistent memory store for Chat Copilot.
 The service uses its [vector search](https://learn.microsoft.com/en-us/azure/search/vector-search-overview) capabilities.
 
 # (Optional) Enable Application Insights telemetry
@@ -145,7 +145,7 @@ In the Cluster URI use the following link: `https://ade.applicationinsights.io/s
 
 For more info see [Query data in Azure Monitor using Azure Data Explorer](https://learn.microsoft.com/en-us/azure/data-explorer/query-monitor-data).
 
-CopilotChat specific events are in a table called `customEvents`.
+ChatCopilot specific events are in a table called `customEvents`.
 
 For example to see the most recent 100 skill function invocations:
 

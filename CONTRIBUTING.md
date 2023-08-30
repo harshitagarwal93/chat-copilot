@@ -1,6 +1,6 @@
-# Contributing to Copilot Chat
+# Contributing to Chat Copilot
 
-You can contribute to Copilot Chat with issues and pull requests (PRs). Simply
+You can contribute to Chat Copilot with issues and pull requests (PRs). Simply
 filing issues for problems you encounter is a great way to contribute. Contributing
 code is greatly appreciated.
 
@@ -11,7 +11,7 @@ tips on how you can make reporting your issue as effective as possible.
 
 ### Where to Report
 
-New issues can be reported in our [list of issues](https://github.com/microsoft/copilot-chat/issues).
+New issues can be reported in our [list of issues](https://github.com/microsoft/chat-copilot/issues).
 
 Before filing a new issue, please search the list of issues to make sure it does
 not already exist.
@@ -62,7 +62,7 @@ DON'Ts:
 - **DON'T** surprise us with big pull requests. Instead, file an issue and start
   a discussion so we can agree on a direction before you invest a large amount of time.
 - **DON'T** commit code that you didn't write. If you find code that you think is a good
-  fit to add to Copilot Chat, file an issue and start a discussion before proceeding.
+  fit to add to Chat Copilot, file an issue and start a discussion before proceeding.
 - **DON'T** submit PRs that alter licensing related files or headers. If you believe
   there's a problem with them, file an issue and we'll be happy to discuss it.
 - **DON'T** make new APIs without filing an issue and discussing with us first.
